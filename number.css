@@ -1,0 +1,29 @@
+input {
+	position:absolute;
+	height:35px;
+	top:30px;
+	width:200px;
+}
+div {
+color:white;
+text-align:center;
+padding:5px;
+font-size:70px;
+}
+#play {
+	left:400px;
+}
+#show {
+	left:700px;
+}
+body {
+margin : 0px;
+}
+#score {
+	position:absolute;
+	left:1000px;
+	font-size:60px;
+	padding:0px;
+	margin-top:10px;
+	
+}
