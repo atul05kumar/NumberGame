@@ -61,8 +61,10 @@ function show() {
     var fl = 0;
     while (1) {
       fl = 0;
-      l = (Math.floor(Math.random() * 1000)) % 1000 + 101;
-      t = (Math.floor(Math.random() * 1000)) % 450 + 101;
+      //l = (Math.floor(Math.random() * 1000)) % 1000 + 101;
+      //t = (Math.floor(Math.random() * 1000)) % 450 + 101;
+      l = between(1, window.screen.availWidth * 0.6) + 101;
+      t = between(1, window.screen.availHeight * 0.6) + 101;
       //alert(l + "and " + t + "and " + oldl + " " + oldt);
       for (var j = 0; j < i; j++) {
         oldt = tt[j];
@@ -91,4 +93,10 @@ function show() {
 
   //enable the play button
   document.getElementById("play").disabled = false;
+}
+
+function between(min, max) {  
+  return Math.floor(
+    Math.random() * (max - min) + min
+  )
 }
